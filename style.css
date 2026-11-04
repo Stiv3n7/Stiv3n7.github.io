@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
-  background: #blue;
-  color: #120;
+  background: #e5e7e4;
+  color: #222;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -43,7 +44,7 @@ h2 {
   font-weight: 900;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #000;
+  color: #8f86f9;
 }
 
 .content > p {
@@ -66,7 +67,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #aaa;
+  color: #bbc2e3;
 }
 
 #interests ul {
@@ -79,7 +80,7 @@ h2 {
 }
 
 #interests li {
-  color: #555;
+  color: #a8e3eb;
   font-size: 1rem;
   font-weight: 600;
   padding: 10px 20px;
@@ -95,10 +96,11 @@ h2 {
 
 #interests li:hover {
   background: #000;
-  color: #000000;
+  color: #fff;
   border-color: #000;
   transform: translateY(-2px);
 }
+
 
 .sidebar-img {
   width: 100%;
@@ -138,7 +140,7 @@ nav h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #000;
+  color: #353a3b;
 }
 
 #nav-ul {
@@ -150,7 +152,7 @@ nav h1 {
 }
 
 .nav-li a {
-  color: #666;
+  color: #d72020;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
@@ -164,4 +166,60 @@ nav h1 {
 .nav-li a:hover {
   background: #000;
   color: #fff;
+}
+
+
+
+
+/* Portfolio styles */
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #444;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: #000;
+  color: #fff;
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
 }
